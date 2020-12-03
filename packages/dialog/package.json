@@ -1,0 +1,38 @@
+{
+  "name": "@cartogram/dialog",
+  "version": "0.0.0",
+  "description": "",
+  "publishConfig": {
+    "access": "public",
+    "@cartogram:registry": "https://registry.npmjs.org"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.mjs",
+  "esnext": "index.esnext",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "esnext": "./index.esnext"
+    },
+    "./": "./",
+    "./server": {
+      "import": "./server.mjs",
+      "require": "./server.js",
+      "esnext": "./server.esnext"
+    },
+    "./testing": {
+      "import": "./testing.mjs",
+      "require": "./testing.js",
+      "esnext": "./testing.esnext"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">=16.8.0 <17.0.0",
+    "react-dom": ">=16.8.0 <17.0.0"
+  }
+}
