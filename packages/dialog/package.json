@@ -1,6 +1,6 @@
 {
   "name": "@parley/dialog",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "description": "",
   "publishConfig": {
     "access": "public",
@@ -31,11 +31,11 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "@parley/logger": "^0.0.1-alpha.0"
+    "@parley/logger": "^0.0.1-alpha.1"
   },
   "peerDependencies": {
     "react": ">=16.8.0 <17.0.0",
     "react-dom": ">=16.8.0 <17.0.0"
   },
-  "gitHead": "a0776afda2a939469b08b20b69abd761da76dd10"
+  "gitHead": "006227ab1f64b4e9faccf7416fefdf474d75bf31"
 }

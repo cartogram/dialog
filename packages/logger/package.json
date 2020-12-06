@@ -1,8 +1,9 @@
 {
   "name": "@parley/logger",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "@parley:registry": "https://registry.npmjs.org"
   },
   "license": "MIT",
   "main": "index.js",
@@ -22,5 +23,5 @@
     "@types/debug": "4.1.5",
     "debug": "^4.3.1"
   },
-  "gitHead": "a0776afda2a939469b08b20b69abd761da76dd10"
+  "gitHead": "006227ab1f64b4e9faccf7416fefdf474d75bf31"
 }
