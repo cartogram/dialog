@@ -10,5 +10,7 @@ packages/*/*.d.ts
 packages/*/*.js
 !packages/*/.eslintrc.js
 packages/*
+future-packages/*
 !packages/dialog
+!packages/logger
 *.log

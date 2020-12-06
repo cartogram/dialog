@@ -6,10 +6,5 @@
     "rootDir": "src"
   },
   "include": ["src/**/*"],
-  "references": [
-    {"path": "../core"},
-    {"path": "../server"},
-    {"path": "../logger"},
-    {"path": "../ui"}
-  ]
+  "references": [{"path": "../logger"}]
 }

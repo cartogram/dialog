@@ -1,6 +1,6 @@
 {
   "name": "@parley/dialog",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "",
   "publishConfig": {
     "access": "public",
@@ -31,10 +31,7 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "@parley/core": "^0.0.1",
-    "@parley/server": "^0.0.1",
-    "@parley/ui": "^0.0.1",
-    "@parley/logger": "^0.0.1"
+    "@parley/logger": "^0.0.0"
   },
   "peerDependencies": {
     "react": ">=16.8.0 <17.0.0",

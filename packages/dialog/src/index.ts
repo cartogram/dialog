@@ -1,3 +1,2 @@
-const Dialog = true;
+export {Logger} from '@parley/logger';
 
-export {Dialog};
