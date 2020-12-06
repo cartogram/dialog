@@ -1,10 +1,10 @@
 {
-  "name": "@cartogram/dialog",
+  "name": "@parley/dialog",
   "version": "0.0.1",
   "description": "",
   "publishConfig": {
     "access": "public",
-    "@cartogram:registry": "https://registry.npmjs.org"
+    "@parley:registry": "https://registry.npmjs.org"
   },
   "license": "MIT",
   "main": "index.js",
@@ -30,6 +30,12 @@
     }
   },
   "sideEffects": false,
+  "dependencies": {
+    "@parley/core": "^0.0.1",
+    "@parley/server": "^0.0.1",
+    "@parley/ui": "^0.0.1",
+    "@parley/logger": "^0.0.1"
+  },
   "peerDependencies": {
     "react": ">=16.8.0 <17.0.0",
     "react-dom": ">=16.8.0 <17.0.0"

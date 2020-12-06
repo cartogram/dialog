@@ -31,14 +31,14 @@ const packagesDirectory = path.join(rootDirectory, 'packages');
   });
   await write(
     path.join(packageDirectory, 'README.md'),
-    `# \`@cartogram/${name}\`\n\n`,
+    `# \`@parley/${name}\`\n\n`,
   );
   await write(path.join(packageDirectory, 'package.json'), {
-    name: `@cartogram/${name}`,
+    name: `@parley/${name}`,
     version: '0.0.0',
     publishConfig: {
       access: 'public',
-      '@cartogram:registry': 'https://registry.npmjs.org',
+      '@parley:registry': 'https://registry.npmjs.org',
     },
     main: 'index.js',
     module: 'index.mjs',
@@ -83,8 +83,8 @@ export default createPackage((pkg) => {
 async function addPackageDependency(file: string, name: string) {
   const pkg = await readJSON(file);
   const dependencies = Object.entries(pkg.dependencies ?? {});
-  if (pkg.dependencies == null || !(`@cartogram/${name}` in pkg.dependencies))
-    dependencies.push([`@cartogram/${name}`, '^0.0.0']);
+  if (pkg.dependencies == null || !(`@parley/${name}` in pkg.dependencies))
+    dependencies.push([`@parley/${name}`, '^0.0.0']);
 
   pkg.dependencies = Object.fromEntries(
     dependencies.sort(([one], [two]) => one.localeCompare(two)),

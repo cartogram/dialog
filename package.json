@@ -2,7 +2,7 @@
   "name": "dialog",
   "version": "0.0.0",
   "private": true,
-  "repository": "https://github.com/cartogram/dialog.git",
+  "repository": "https://github.com/parley/dialog.git",
   "workspaces": [
     "./packages/*"
   ],

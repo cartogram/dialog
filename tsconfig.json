@@ -1,5 +1,10 @@
 {
   "files": [],
   "include": [],
-  "references": [{"path": "./packages/dialog"}]
+  "references": [
+    {"path": "./packages/dialog"},
+    {"path": "./packages/core"},
+    {"path": "./packages/ui"},
+    {"path": "./packages/logger"}
+  ]
 }
