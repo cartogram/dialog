@@ -1,27 +1,16 @@
 {
-  "name": "@parley/logger",
-  "version": "0.0.1-alpha.2",
+  "name": "@cartogram/dialog-logger",
+  "version": "0.0.0",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
   "publishConfig": {
-    "access": "public",
-    "@parley:registry": "https://registry.npmjs.org"
+    "access": "public"
   },
-  "license": "MIT",
-  "main": "index.js",
-  "module": "index.mjs",
-  "esnext": "index.esnext",
-  "types": "index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./index.mjs",
-      "require": "./index.js",
-      "esnext": "./index.esnext"
-    },
-    "./": "./"
-  },
-  "sideEffects": false,
   "dependencies": {
     "@types/debug": "4.1.5",
     "debug": "^4.3.1"
   },
-  "gitHead": "006227ab1f64b4e9faccf7416fefdf474d75bf31"
+  "repository": "https://github.com/fondfolio/minou.git"
 }

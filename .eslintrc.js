@@ -1,8 +1,13 @@
 module.exports = {
+  parserOptions: {
+    project: ['packages/dialog/tsconfig.json', 'packages/logger/tsconfig.json'],
+  },
   extends: [
-    'plugin:@sewing-kit/typescript',
-    'plugin:@sewing-kit/react',
-    'plugin:@sewing-kit/prettier',
+    'plugin:@shopify/typescript',
+    'plugin:@shopify/react',
+    'plugin:@shopify/node',
+    'plugin:@shopify/typescript-type-checking',
+    'plugin:@shopify/prettier',
   ],
   ignorePatterns: [
     'node_modules/',
@@ -15,16 +20,7 @@ module.exports = {
     'packages/*/*.esnext',
     'packages/**/tests/fixtures/',
   ],
-  overrides: [
-    {
-      files: ['sewing-kit.config.ts', 'config/sewing-kit/**/*'],
-      rules: {
-        'import/no-extraneous-dependencies': 'off',
-      },
-    },
-  ],
   rules: {
     'lines-around-comment': 'off',
-    'no-warning-comments': 'off',
   },
 };

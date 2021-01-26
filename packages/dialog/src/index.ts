@@ -1,1 +1,1 @@
-export {Logger} from '@parley/logger';
+export * from '@cartogram/dialog-logger';
