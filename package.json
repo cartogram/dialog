@@ -9,7 +9,7 @@
   },
   "repository": "https://github.com/cartogram/dialog.git",
   "scripts": {
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "dev": "tsc -b -watch",
     "build": "tsc -b",
     "version-bump": "lerna version",
