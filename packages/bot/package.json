@@ -1,6 +1,6 @@
 {
   "name": "@cartogram/bot",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "build/index.js",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
     "dev": "DEBUG=* node ./build/index.js"
   },
   "dependencies": {
-    "@cartogram/dialog": "^0.0.0"
+    "@cartogram/dialog": "^0.0.1"
   },
   "publishConfig": {
     "access": "public"
