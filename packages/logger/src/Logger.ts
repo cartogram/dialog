@@ -7,7 +7,7 @@ export class Logger {
     const normalizedOptions =
       typeof options === 'string' ? {prefix: options} : options;
 
-    this.debug = Debug(`dialog:${normalizedOptions.prefix}`);
+    this.debug = Debug(`@cartogram/dialog:${normalizedOptions.prefix}`);
   }
 
   log(message: string, ...args: any[]) {

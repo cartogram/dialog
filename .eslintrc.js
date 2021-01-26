@@ -1,6 +1,10 @@
 module.exports = {
   parserOptions: {
-    project: ['packages/dialog/tsconfig.json', 'packages/logger/tsconfig.json'],
+    project: [
+      'packages/bot/tsconfig.json',
+      'packages/dialog/tsconfig.json',
+      'packages/logger/tsconfig.json',
+    ],
   },
   extends: [
     'plugin:@shopify/typescript',
