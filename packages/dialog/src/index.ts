@@ -1,1 +1,1 @@
-export * from '@cartogram/dialog-logger';
+export {Logger} from '@cartogram/dialog-logger';

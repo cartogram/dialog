@@ -1,6 +1,6 @@
 const {resolve} = require('path');
 
-const {config, exec, cp, mkdir, rm, echo, exit} = require('shelljs');
+const {config, exec, cp, mv, mkdir, rm, echo, exit} = require('shelljs');
 
 const root = resolve(__dirname, '..');
 const projectDir = process.argv[2];
@@ -22,7 +22,8 @@ const logHeader = (header) => {
   logBreak();
 };
 
-const SCOPE = '@minou';
+const SCOPE = '@cartogram';
+const PREFIX = 'dialog-';
 const LOCAL_PACKAGE_DIR = 'packages';
 
 if (!projectDir) {
@@ -32,25 +33,14 @@ if (!projectDir) {
   exit(1);
 }
 
-const DEST_PACKAGE_DIR = resolve(root, `../${projectDir}/node_modules/`);
+const DEST_PACKAGE_DIR = resolve(root, `../../${projectDir}/node_modules/`);
 
 const files = [
-  {name: 'minou', scope: false},
+  {name: 'dialog', scope: true, prefix: false},
   {
-    name: 'core',
+    name: 'logger',
     scope: true,
-  },
-  {
-    name: 'icons',
-    scope: true,
-  },
-  {
-    name: 'theme',
-    scope: true,
-  },
-  {
-    name: 'utilities',
-    scope: true,
+    prefix: true,
   },
 ];
 
@@ -58,14 +48,16 @@ log('building project...');
 exec('yarn run build');
 
 logBreak();
-files.forEach(({name, scope}) => {
+files.forEach(({name, scope, prefix}) => {
   logHeader(name);
 
   const source = resolve(LOCAL_PACKAGE_DIR, name);
   const destination = scope
     ? resolve(DEST_PACKAGE_DIR, SCOPE)
     : resolve(DEST_PACKAGE_DIR);
-  const destinationPackage = resolve(destination, name);
+  const destinationPackage = prefix
+    ? resolve(destination, `${PREFIX}${name}`)
+    : resolve(destination, name);
 
   log(`Removing ${destinationPackage}...`);
   rm('-rf', destinationPackage);
@@ -74,7 +66,7 @@ files.forEach(({name, scope}) => {
   mkdir('-p', destination);
 
   log('Copying build to node_modules...');
-  cp('-R', source, destination);
+  cp('-R', source, destinationPackage);
 
   log('Success!');
   logDivder();
