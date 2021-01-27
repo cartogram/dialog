@@ -1,9 +1,11 @@
 module.exports = {
   parserOptions: {
     project: [
-      'packages/bot/tsconfig.json',
       'packages/dialog/tsconfig.json',
       'packages/logger/tsconfig.json',
+      'packages/core/tsconfig.json',
+      'packages/ui/tsconfig.json',
+      'packages/server/tsconfig.json',
     ],
   },
   extends: [

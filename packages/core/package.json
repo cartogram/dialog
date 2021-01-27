@@ -1,14 +1,12 @@
 {
-  "name": "@cartogram/bot",
-  "version": "0.0.1",
+  "name": "@cartogram/dialog-core",
+  "version": "0.0.0",
   "main": "build/index.js",
-  "private": true,
   "scripts": {
-    "build": "tsc",
-    "dev": "DEBUG=* node ./build/index.js"
+    "build": "tsc"
   },
   "dependencies": {
-    "@cartogram/dialog": "^0.0.1"
+    "@cartogram/dialog-logger": "^0.0.1"
   },
   "publishConfig": {
     "access": "public"

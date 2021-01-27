@@ -1,5 +1,11 @@
 {
   "files": [],
   "include": [],
-  "references": [{"path": "./packages/bot"}, {"path": "./packages/dialog"}, {"path": "./packages/logger"}]
+  "references": [
+    {"path": "./packages/dialog"},
+    {"path": "./packages/logger"},
+    {"path": "./packages/core"},
+    {"path": "./packages/server"},
+    {"path": "./packages/ui"}
+  ]
 }

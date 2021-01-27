@@ -6,7 +6,10 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@cartogram/dialog-logger": "^0.0.1"
+    "@cartogram/dialog-logger": "^0.0.1",
+    "@cartogram/dialog-core": "0.0.1",
+    "@cartogram/dialog-ui": "0.0.1",
+    "@cartogram/dialog-server": "0.0.1"
   },
   "publishConfig": {
     "access": "public"

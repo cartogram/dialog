@@ -42,6 +42,21 @@ const files = [
     scope: true,
     prefix: true,
   },
+  {
+    name: 'core',
+    scope: true,
+    prefix: true,
+  },
+  {
+    name: 'server',
+    scope: true,
+    prefix: true,
+  },
+  {
+    name: 'ui',
+    scope: true,
+    prefix: true,
+  },
 ];
 
 log('building project...');
