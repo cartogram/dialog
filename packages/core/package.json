@@ -1,12 +1,12 @@
 {
   "name": "@cartogram/dialog-core",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "main": "build/index.js",
   "scripts": {
     "build": "tsc"
   },
   "dependencies": {
-    "@cartogram/dialog-logger": "^0.0.1"
+    "@cartogram/dialog-logger": "^0.0.2"
   },
   "publishConfig": {
     "access": "public"
