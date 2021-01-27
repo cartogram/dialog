@@ -1,6 +1,6 @@
 const {resolve} = require('path');
 
-const {config, exec, cp, mv, mkdir, rm, echo, exit} = require('shelljs');
+const {config, exec, cp, mkdir, rm, echo, exit} = require('shelljs');
 
 const root = resolve(__dirname, '..');
 const projectDir = process.argv[2];
