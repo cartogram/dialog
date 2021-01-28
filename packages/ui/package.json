@@ -1,12 +1,12 @@
 {
   "name": "@cartogram/dialog-ui",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "build/index.js",
   "scripts": {
     "build": "tsc"
   },
   "dependencies": {
-    "@cartogram/dialog-logger": "^0.0.3",
+    "@cartogram/dialog-logger": "^0.0.4",
     "@slack/web-api": "^6.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",

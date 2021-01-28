@@ -1,13 +1,13 @@
 {
   "name": "@cartogram/dialog-core",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "build/index.js",
   "scripts": {
     "build": "tsc"
   },
   "dependencies": {
-    "@cartogram/dialog-logger": "^0.0.3",
-    "@cartogram/dialog-ui": "^0.0.3",
+    "@cartogram/dialog-logger": "^0.0.4",
+    "@cartogram/dialog-ui": "^0.0.4",
     "@types/react-reconciler": "^0.18.0",
     "react-reconciler": "^0.26.1"
   },

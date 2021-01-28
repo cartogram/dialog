@@ -1,13 +1,13 @@
 {
   "name": "@cartogram/dialog-server",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "build/index.js",
   "scripts": {
     "build": "tsc"
   },
   "dependencies": {
-    "@cartogram/dialog-core": "^0.0.3",
-    "@cartogram/dialog-logger": "^0.0.3",
+    "@cartogram/dialog-core": "^0.0.4",
+    "@cartogram/dialog-logger": "^0.0.4",
     "@shopify/network": "1.6.0",
     "@slack/events-api": "3.0.0",
     "@slack/interactive-messages": "2.0.0",
