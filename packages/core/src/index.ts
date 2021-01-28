@@ -1,1 +1,4 @@
-export {Logger} from '@cartogram/dialog-logger';
+export {reconcile} from './hostConfig';
+export {render} from './render';
+export {generateEvent} from './utilities';
+export {DialogError} from './errors';

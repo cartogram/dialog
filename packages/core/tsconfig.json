@@ -7,9 +7,7 @@
     "baseUrl": "src",
     "rootDir": "src"
   },
-  "include": ["src/**/*"],
+  "include": ["./src/**/*"],
   "exclude": ["**/tests/**/*.ts", "**/tests/**/*.tsx"],
-  "references": [
-    {"path": "../logger"}
-  ]
+  "references": [{"path": "../logger"}]
 }
