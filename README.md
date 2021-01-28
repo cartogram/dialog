@@ -9,4 +9,3 @@ Pull requests are welcome. See the [contribution guidelines](https://github.com/
 ## Publishing
 
 - run `yarn run version-bump`
-- push the changes to git?
