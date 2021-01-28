@@ -1,22 +1,22 @@
 {
   "name": "@cartogram/dialog-server",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "build/index.js",
   "scripts": {
     "build": "tsc"
   },
   "dependencies": {
-    "@cartogram/dialog-logger": "^0.0.2",
-    "@cartogram/dialog-core": "^0.0.2",
-    "koa": "2.13.1",
+    "@cartogram/dialog-core": "^0.0.3",
+    "@cartogram/dialog-logger": "^0.0.3",
+    "@shopify/network": "1.6.0",
+    "@slack/events-api": "3.0.0",
+    "@slack/interactive-messages": "2.0.0",
+    "@slack/web-api": "^6.0.0",
     "@types/koa": "2.0.45",
-    "koa-compose": "4.1.0",
     "@types/koa-compose": "^3.2.2",
     "dotenv": "8.2.0",
-    "@slack/interactive-messages": "2.0.0",
-    "@slack/events-api": "3.0.0",
-    "@shopify/network": "1.6.0",
-    "@slack/web-api": "^6.0.0",
+    "koa": "2.13.1",
+    "koa-compose": "4.1.0",
     "react": "^17.0.1"
   },
   "resolutions": {
