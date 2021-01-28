@@ -1,6 +1,6 @@
 {
   "name": "@cartogram/dialog",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "build/index.js",
   "engines": {
     "node": ">=14.15.4"
@@ -9,10 +9,10 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@cartogram/dialog-core": "^0.0.4",
-    "@cartogram/dialog-logger": "^0.0.4",
-    "@cartogram/dialog-server": "^0.0.4",
-    "@cartogram/dialog-ui": "^0.0.4"
+    "@cartogram/dialog-core": "^0.0.5",
+    "@cartogram/dialog-logger": "^0.0.5",
+    "@cartogram/dialog-server": "^0.0.5",
+    "@cartogram/dialog-ui": "^0.0.5"
   },
   "publishConfig": {
     "access": "public"
