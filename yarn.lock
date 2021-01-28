@@ -292,24 +292,6 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@cartogram/dialog-core@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@cartogram/dialog-core/-/dialog-core-0.0.1.tgz#50a4fd018dcb9a2513735f099f12810033c628d7"
-  integrity sha512-RNI6xfcB7+i46I4LoxxT5ltxiYD1sWc76WvtyC4Nb4b7kXuLfrhQyU8elgsXPrp1PY09K1vELaQlPn4ONQDfVg==
-  dependencies:
-    "@cartogram/dialog-logger" "^0.0.2"
-    "@types/react-reconciler" "^0.18.0"
-    react-reconciler "^0.25.1"
-
-"@cartogram/dialog-ui@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@cartogram/dialog-ui/-/dialog-ui-0.0.1.tgz#8f5457af2cf934fcb00a046cb35f4f41302e24be"
-  integrity sha512-Fwgwx4MzkbDuiV2mGLb1SXCm0gInPnjIYnYha0Wqbl7bgCBp7JupKNRDuiQ/lP44saUnsXllPYYo9lrSkkFivg==
-  dependencies:
-    "@slack/web-api" "^5.8.1"
-    "@types/react" "^16.9.34"
-    react "^16.13.1"
-
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"
@@ -1682,22 +1664,6 @@
   resolved "https://registry.yarnpkg.com/@slack/types/-/types-1.10.0.tgz#cbf7d83e1027f4cbfd13d6b429f120c7fb09127a"
   integrity sha512-tA7GG7Tj479vojfV3AoxbckalA48aK6giGjNtgH6ihpLwTyHE3fIgRrvt8TWfLwW8X8dyu7vgmAsGLRG7hWWOg==
 
-"@slack/web-api@^5.8.1":
-  version "5.15.0"
-  resolved "https://registry.yarnpkg.com/@slack/web-api/-/web-api-5.15.0.tgz#6bcf1d0a833c0e87e45150c2fd1f9657e3ec0b0b"
-  integrity sha512-tjQ8Zqv/Fmj9SOL9yIEd7IpTiKfKHi9DKAkfRVeotoX0clMr3SqQtBqO+KZMX27gm7dmgJsQaDKlILyzdCO+IA==
-  dependencies:
-    "@slack/logger" ">=1.0.0 <3.0.0"
-    "@slack/types" "^1.7.0"
-    "@types/is-stream" "^1.1.0"
-    "@types/node" ">=8.9.0"
-    axios "^0.21.1"
-    eventemitter3 "^3.1.0"
-    form-data "^2.5.0"
-    is-stream "^1.1.0"
-    p-queue "^6.6.1"
-    p-retry "^4.0.0"
-
 "@slack/web-api@^6.0.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@slack/web-api/-/web-api-6.0.0.tgz#14c65ed73c66a187e5f20e12c3898dfd8d5cbf7c"
@@ -2023,7 +1989,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.9.34", "@types/react@^17.0.0":
+"@types/react@*", "@types/react@^17.0.0":
   version "17.0.0"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.0.tgz#5af3eb7fad2807092f0046a1302b7823e27919b8"
   integrity sha512-aj/L7RIMsRlWML3YB6KZiXB3fV2t41+5RBGYF8z+tAKU43Px8C3cYUZsDvf1/+Bm4FK21QWBrDutu8ZJ/70qOw==
@@ -7821,7 +7787,7 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
-react-reconciler@^0.25.1, react-reconciler@^0.26.1:
+react-reconciler@^0.26.1:
   version "0.26.1"
   resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.26.1.tgz#860952dd359fd870f94895c254271e3a9de3b2d6"
   integrity sha512-6E/CvH9zcDmHjhiNJlP0qJ8+3ufnY2b5RWs774Uy8XKWN0l6qfnlkz0XnDacxqj2rbJdq76w9dlFXjPPOQrmqA==
@@ -7830,7 +7796,7 @@ react-reconciler@^0.25.1, react-reconciler@^0.26.1:
     object-assign "^4.1.1"
     scheduler "^0.20.1"
 
-react@^16.13.1, react@^17.0.0, react@^17.0.1:
+react@^17.0.0, react@^17.0.1:
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.1.tgz#6e0600416bd57574e3f86d92edba3d9008726127"
   integrity sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w==

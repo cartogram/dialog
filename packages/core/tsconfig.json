@@ -9,5 +9,5 @@
   },
   "include": ["./src/**/*"],
   "exclude": ["**/tests/**/*.ts", "**/tests/**/*.tsx"],
-  "references": [{"path": "../logger"}]
+  "references": [{"path": "../logger"}, {"path": "../ui"}]
 }
