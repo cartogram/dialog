@@ -2,6 +2,9 @@
   "name": "@cartogram/dialog-server",
   "version": "0.0.4",
   "main": "build/index.js",
+  "engines": {
+    "node": ">=14.15.4"
+  },
   "scripts": {
     "build": "tsc"
   },
@@ -17,7 +20,9 @@
     "dotenv": "8.2.0",
     "koa": "2.13.1",
     "koa-compose": "4.1.0",
-    "react": "^17.0.1"
+    "react": "^17.0.1",
+    "chalk": "4.1.0",
+    "get-port": "5.1.1"
   },
   "resolutions": {
     "koa-compose": "4.1.0"

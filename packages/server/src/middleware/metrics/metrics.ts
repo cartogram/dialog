@@ -1,4 +1,3 @@
-/* eslint-disable node/callback-return */
 import {Context} from 'koa';
 import compose from 'koa-compose';
 

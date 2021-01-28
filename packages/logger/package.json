@@ -2,6 +2,9 @@
   "name": "@cartogram/dialog-logger",
   "version": "0.0.4",
   "main": "build/index.js",
+  "engines": {
+    "node": ">=14.15.4"
+  },
   "scripts": {
     "build": "tsc"
   },

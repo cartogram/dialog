@@ -88,7 +88,7 @@ export class DialogServer {
    * @param {object} [options] Dialog Server options
    *
    */
-  constructor(components: Function[] = [], options: Options = {}) {
+  constructor(components: any[] = [], options: Options = {}) {
     const {port, ip} = options;
 
     // TODO(parley): throw config errors here, ie missing token
@@ -117,7 +117,7 @@ export class DialogServer {
   }
 
   start() {
-    console.log('yo yo');
+    // eslint-disable-next-line @typescript-eslint/no-misused-promises
     const app = createHttpServer(this.init());
 
     logger.log('init %s %s', this.ip, this.port, this.components);
@@ -582,7 +582,7 @@ export class DialogServer {
    * @return {Function}
    */
 
-  init() {
+  init(): (req: IncomingMessage, res: ServerResponse) => Promise<void> {
     const combinedMiddleware = compose([
       ...this.middleware,
       bindAdapterToMiddleware(
